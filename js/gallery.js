@@ -1,4 +1,4 @@
-  // javascript module for gallery (lightbox) functions 
+  // javascript module for gallery (lightbox) functions  
  function showPhoto(index, photos) {
     document.getElementById('gallery').style.display = "block";
     var container = document.getElementsByClassName('gallery__image')[0];
