@@ -19,12 +19,18 @@ document.getElementById('close').addEventListener('click', gallery.closeModal);
 
 input.addEventListener("click", function(event) {
     let query = document.getElementById('search').value;
+    if(query === 'undefined' || query === null || query === '') {
+        alert("Search text field cannot be empty");
+    } else {
     event.preventDefault();
     getImageResp(query);
+}
 });
 
 
 async function getImageResp(text) {
+    document.getElementById('gallery').style.display = "none";
+    document.getElementById('thumbnails').style.display = "none";
     const METHOD = 'method=flickr.photos.search';
     const FORMAT = '&format=json&nojsoncallback=1';
     const SORT_RELEVANCE = '&sort=relevance';
@@ -40,5 +46,7 @@ async function getImageResp(text) {
     thumbnail.getImages(data.photos.photo);
     return await data;
 }
+
+
 
 
