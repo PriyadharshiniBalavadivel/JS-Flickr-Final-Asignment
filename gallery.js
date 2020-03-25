@@ -11,7 +11,7 @@
  }
  
  function closeModal() {
-   cument.getElementById('gallery').style.display = "none";
+   document.getElementById('gallery').style.display = "none";
   }
   
   export default {showPhoto, closeModal};
