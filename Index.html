@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flickr Gallery Assignment</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="wrapper">
+        <h1>Flickr gallery</h1>
+            <input id="search" type="text" placeholder="Search here" class="input" > &nbsp; &nbsp;
+            <input id="maxImage" type="text" placeholder="Max no of Images" class="input" >
+            <button id="submit" class="buttonStyle">Search</button>
+        </header>
+            <div class="wrapper gallery" id="gallery">
+                <span class="close cursor" id="close" >&times;</span>
+               <img src="" class="gallery__image" />
+            </div>
+            <div class="wrapper thumbnails" id="thumbnails">
+                <ul class="thumbnails__list"></ul>
+             </div>
+  
+<script type="module"  src="js/index.js"></script>
+<script type="module"  src="js/gallery.js"></script>
+<script type="module"  src="js/thumbNails.js"></script>
+</body>
+</html>
